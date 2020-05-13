@@ -1,0 +1,49 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px;
+    
+  }
+
+  .mat-form-field {
+    width: 100%;
+    min-width: 330px;
+
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.404);
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+
+  .resetLogin{
+    display: flex;
+    justify-content: flex-start;
+    font-size: smaller;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  .resetLogin:hover{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    font-size: small;
+    color: rgba(107, 0, 0, 0.979);
+  }
+

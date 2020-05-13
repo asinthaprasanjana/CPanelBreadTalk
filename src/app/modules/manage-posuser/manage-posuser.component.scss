@@ -1,0 +1,47 @@
+/* Structure */
+
+
+  table {
+    width: 100%;
+    border-style: none;
+    cursor: pointer;
+  }
+
+.mat-row.hovered {
+    background: #eee;
+}
+
+.mat-row.highlighted {
+  background: #eee;
+}
+
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  mat-row.mat-row.ng-star-inserted {
+    border: 0;
+}
+
+.table-row mat-table-row:hover .btn-section{
+  opacity: 1;
+}
+.table-row:hover .btn-icon{
+  opacity: 1;
+}
+
+.example-table-container {
+  position: relative;
+  max-height: 500px;
+  overflow: auto;
+}
+
+td.mat-cell
+{
+ border-bottom-style: none;
+ 
+}
+  
+

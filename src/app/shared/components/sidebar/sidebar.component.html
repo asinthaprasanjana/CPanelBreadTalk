@@ -1,0 +1,87 @@
+
+
+<mat-nav-list class="sidebar">
+
+    <a mat-list-item routerLinkActive = "List-item-active" routerLink="/Dashboard">
+        <mat-icon class="material-icons color_green">dashboard</mat-icon>
+        
+        <span class="span">Dashboard</span>
+    
+    </a>
+    <mat-divider></mat-divider>
+
+    <a mat-list-item routerLinkActive = "List-item-active" routerLink="/Locations">
+        <mat-icon class="material-icons color_green">location_city</mat-icon ><span class="span">Location</span></a>     
+    <mat-divider></mat-divider>
+
+    <a mat-list-item routerLinkActive = "List-item-active" routerLink="/pos">
+        <mat-icon class="material-icons color_green">desktop_windows</mat-icon ><span class="span">POS</span></a>     
+    <mat-divider></mat-divider>
+
+  
+    <!-- <a mat-list-item routerLinkActive = "List-item-active" routerLink="/AddNewPos">
+        <mat-icon>desktop_windows</mat-icon ><span>POS Setting</span></a>     
+    <mat-divider></mat-divider> -->
+
+    <a mat-list-item routerLinkActive = "List-item-active" [matMenuTriggerFor]="dropDown_user">
+        
+        <mat-icon class="material-icons color_green">account_box</mat-icon >
+        <span class="span">POS User & Roles</span> &nbsp;
+        <mat-icon class="downArrow" class="material-icons color_green">arrow_drop_down</mat-icon>        
+    </a>  
+    <mat-divider></mat-divider>
+    
+    <mat-list #dropDown_user="matList" overlapTrigger="false" class="material-menu color_black">
+
+        <button  mat-menu-item routerLinkActive = "List-item-active" routerLink="/roles" class="plMenuCSS">
+          <mat-icon class="material-icons color_green">policy</mat-icon>
+          Pos Roles
+        </button>
+        
+        <button  mat-menu-item routerLinkActive = "List-item-active" routerLink="/posusers" class="plMenuCSS">
+          <mat-icon class="material-icons color_green">supervisor_account</mat-icon>
+          Pos Users
+        </button>
+
+    </mat-list> 
+
+
+    <!--cpanel users and roles-->
+
+    <br>
+    
+
+    <a mat-list-item routerLinkActive = "List-item-active" [matMenuTriggerFor]="dropDown_user">
+        
+        <mat-icon class="material-icons color_green">fingerprint</mat-icon >
+        <span class="span">CPanel User & Roles</span> &nbsp;
+        <mat-icon class="downArrow" class="material-icons color_green">arrow_drop_down</mat-icon>        
+    </a>  
+    <mat-divider></mat-divider>
+    
+    
+
+    <mat-list #dropDown_user="matList" overlapTrigger="false" class="material-menu color_black">
+
+        <button  mat-menu-item routerLinkActive = "List-item-active" routerLink="/roles" class="plMenuCSS">
+          <mat-icon class="material-icons color_green">event_seat</mat-icon>
+          CPanel Roles
+        </button>
+        
+        <button  mat-menu-item routerLinkActive = "List-item-active" routerLink="/posusers" class="plMenuCSS">
+          <mat-icon class="material-icons color_green">perm_identity</mat-icon>
+          CPanel Users
+        </button>
+
+    </mat-list> 
+
+    
+
+</mat-nav-list>
+
+
+
+
+
+
+

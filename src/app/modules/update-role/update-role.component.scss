@@ -1,0 +1,68 @@
+.example-tab-icon {
+    margin-right: 5px;
+  }
+
+  .mat-tab-group{
+      height: 565px;
+  }
+  
+  .example-form {
+    width: 100%;
+    vertical-align: middle;
+    height: 250px;
+
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-button-row button,
+.example-button-row a {
+  margin-right: 10px;
+ 
+}
+
+/* Success syling */
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #2d9244;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #2d9244;
+}
+
+.mat-icon-button.mat-success {
+  color:#2d9244;
+}
+.example-button-row{
+    display: flex;
+    width: 400px;
+    align-content: center;
+}
+
+.button{
+    width: 100%;
+}
+
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 7px 0;
+}
+
+
+
+  
+  

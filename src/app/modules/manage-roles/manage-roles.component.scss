@@ -1,0 +1,30 @@
+/* Structure */
+table {
+    width: 100%;
+    border-style: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .mat-row.hovered {
+    background: #eee;
+}
+
+.mat-row.highlighted {
+  background: #eee;
+}
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  mat-row.mat-row.ng-star-inserted {
+    border: 0;
+}
+
+td.mat-cell
+{
+ border-bottom-style: none;
+}
+  

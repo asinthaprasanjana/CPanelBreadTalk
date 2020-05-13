@@ -1,0 +1,70 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "5px">
+
+    <div fxFlex="40"> 
+
+        <div class="mat-elevation-z0">
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "20px">              
+                    <div fxFlex="100"> 
+                        <mat-form-field>
+                            <mat-label> SEARCH ROLE</mat-label>
+                            <input matInput (keyup)="applyFilter($event)" placeholder="">
+                        </mat-form-field>
+                    </div>
+                </div>
+               
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z0" matSort>
+
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="Rolecode">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>RoleCode</th>
+                    <td mat-cell *matCellDef="let element">{{element.Rolecode}} </td>
+                    </ng-container>
+                
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="Rolename">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>RoleName</th>
+                    <td mat-cell *matCellDef="let element">{{element.Rolename}}</td>
+                    </ng-container>
+                
+                    <!-- address Column -->
+                    <ng-container matColumnDef="RoleDescription">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+                    <td mat-cell *matCellDef="let element">{{element.RoleDescription}}</td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="EditRole">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Edit Settings </th>
+          
+                        <td mat-cell *matCellDef="let element"> 
+                          <button mat-flat-button color = "primary" (click) = "goBack()">Edit                 
+                          </button>           
+                        </td>
+                      </ng-container> 
+
+                    <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;" 
+                        (click)="selection.toggle(row)" 
+                        [ngClass]="{hovered: row.hovered, highlighted: selection.isSelected(row)}"
+                        (mouseover)="row.hovered = true" (mouseout)="row.hovered = false">
+                    </tr>
+                
+                </table>
+
+                <mat-paginator [pageSizeOptions]="[8, 10, 25, 100]"></mat-paginator>
+
+        </div>  
+   
+    </div>
+
+    <div fxFlex="55" class="mat-elevation-z0">   
+        <app-update-role></app-update-role>
+    </div> 
+   
+</div>
+
+
+

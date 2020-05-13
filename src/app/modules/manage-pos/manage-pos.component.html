@@ -1,0 +1,47 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "5px">
+
+  <div fxFlex="100"> 
+
+      <div class="mat-elevation-z0">
+
+          <mat-accordion class="example-headers-align">
+
+            <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  LOCATION WISE POS UNITS
+                </mat-panel-title>
+                <mat-panel-description>
+                  Pick Location to Edit
+                  <mat-icon>location_on</mat-icon>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+
+              <br>
+              <div>
+                <app-location-settings-table></app-location-settings-table>
+              </div>
+
+              <mat-dialog-actions align="end">
+                <button mat-raised-button color="primary" [mat-dialog-close]="true" routerLink="/AddNewPos">Add New Setting</button>		    
+              </mat-dialog-actions>
+  
+
+            </mat-expansion-panel>
+
+          
+          
+
+          </mat-accordion>
+
+
+         
+
+          
+      </div>
+
+     
+  </div>
+</div>
+
+

@@ -1,0 +1,92 @@
+/* Structure */
+table {
+    width: 100%;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  mat-row.mat-row.ng-star-inserted {
+    border: 0;
+}
+
+.mat-row.hovered {
+    background: #eee;
+}
+
+.mat-row.highlighted {
+  background: #eee;
+}
+
+.mat-row.select {
+  background: #eee;
+}
+
+
+td.mat-cell
+{
+ border-bottom-style: none;
+ 
+}
+
+/*pdate location section related css*/
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  vertical-align: top;
+  height: 500px;
+
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-button-row button,
+.example-button-row a {
+margin-right: 10px;
+
+}
+
+/* Success syling */
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+  color: #2d9244;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+color: #f0fff3;
+background-color: #2d9244;
+}
+
+.mat-icon-button.mat-success {
+color:#2d9244;
+}
+.example-button-row{
+  display: flex;
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+  

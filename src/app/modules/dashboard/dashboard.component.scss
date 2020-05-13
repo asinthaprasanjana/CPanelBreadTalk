@@ -1,0 +1,39 @@
+
+.mat-card{
+    width: 25%;
+    border: hidden;
+    
+  }
+
+  /* Structure */
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border:white;
+    
+
+  }
+
+  .mat-form-field.mat-form-field-outline {
+    color:silver;
+  }
+
+  .mat-elevation-z0{
+      height: 500px;
+  }
+
+  .example-card {
+    max-width: 400px;
+  }
+
+  .mat-elevation-z2{
+    width: 96%;
+    overflow: auto;
+  }
+  

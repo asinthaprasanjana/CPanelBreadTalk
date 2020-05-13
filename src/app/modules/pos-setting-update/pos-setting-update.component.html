@@ -1,0 +1,242 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "5px">
+    <div fxFlex="100">       
+            <mat-card class="mat-elevation-z0">     
+                                  
+                    <div fxLayout = "row" fxLayoutAlign="start start" fxLayoutGap="3px" class="pnc-conf">
+
+
+                        <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z2">
+
+                            <h4>
+
+                            <mat-icon>dvr</mat-icon><br><br>
+
+                                Location Name : Maharagama<br>
+                                Unit          : 05<br>
+                                Sale          : 12500<br>
+                                Status        : Online<br>
+                                Active        : Yes
+
+                            </h4>
+
+                        </mat-card>
+
+                        <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z2">
+
+                           
+                            <!--First card of section 2-->
+                            <h4>Printer</h4>
+
+                            <mat-label>Printer Port </mat-label>
+                            <br><br>
+                            <mat-checkbox class="example-margin" [(ngModel)]="printer_usb">USB</mat-checkbox>
+                            <mat-checkbox class="example-margin" [(ngModel)]="printer_serial">SERIAL</mat-checkbox>
+
+                            <br> <br>
+
+                            <mat-label>POS Printer</mat-label>
+
+                            <br>
+
+                            <mat-form-field>
+                            <mat-select [formControl]="selected_posPrinter" [errorStateMatcher]="matcher">
+                                <mat-option>Clear</mat-option>
+                                <mat-option value="valid">Epson</mat-option>
+                                <mat-option value="valid">Bixolon</mat-option>
+                                <mat-option value="invalid">Add New </mat-option>
+                            </mat-select>
+
+                            <mat-error *ngIf="selected_posPrinter.hasError('required')">You must make a selection</mat-error>
+                            <mat-error *ngIf="selected_posPrinter.hasError('pattern') && !selected_posPrinter.hasError('required')">
+                                Your selection is invalid
+                            </mat-error>
+                            </mat-form-field>
+
+
+                        </mat-card>
+
+                        <!--middle card of section 2-->
+                        <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z2">
+
+                            <h4>Customer Display</h4>
+                       
+                            <mat-label>Customer Display Port </mat-label>
+                            <br><br>
+                            <mat-checkbox class="example-margin" [(ngModel)]="customerdisplay_usb">USB</mat-checkbox>
+                            <mat-checkbox class="example-margin" [(ngModel)]="customerdisplay_serial">SERIAL</mat-checkbox>
+
+                            <br><br>
+
+                            <mat-label>Customer Display </mat-label>
+                            <br><br>
+                            <mat-checkbox  class="example-margin" [(ngModel)]="customerdisplay_vfd">VFD</mat-checkbox>
+                            <mat-checkbox  class="example-margin" [(ngModel)]="customerdisplay_secondDisplay">SEC.DISPLAY</mat-checkbox>
+
+
+                        </mat-card>
+
+
+                        <!--right side card of section 2-->
+                        <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z2">
+
+                        <br>
+
+                        <mat-form-field>
+
+                            <mat-label>Second Display</mat-label>
+
+                            <br>
+                            <mat-select [formControl]="selected_secDisplay" [errorStateMatcher]="matcher">
+
+                                <mat-option>Clear</mat-option>
+                                <mat-option value="valid">Poseidon</mat-option>
+                                <mat-option value="invalid">Add New </mat-option>
+
+                            </mat-select>
+
+                            <mat-error *ngIf="selected_secDisplay.hasError('required')">You must make a selection</mat-error>
+                            <mat-error *ngIf="selected_secDisplay.hasError('pattern') && !selected_secDisplay.hasError('required')">
+                                Your selection is invalid
+                            </mat-error>
+
+                        </mat-form-field>
+
+                        <br><br>
+
+                        <mat-form-field>
+                            <mat-label>VDF</mat-label>
+                            <br>
+                            <mat-select [formControl]="selected_vfd" [errorStateMatcher]="matcher">
+
+                                <mat-option>Clear</mat-option>
+                                <mat-option value="valid">Poseidon</mat-option>
+                                <mat-option value="invalid">Add New </mat-option>
+
+                            </mat-select>
+
+                            <mat-error *ngIf="selected_vfd.hasError('required')">You must make a selection</mat-error>
+                            <mat-error *ngIf="selected_vfd.hasError('pattern') && !selected_vfd.hasError('required')">
+                                Your selection is invalid
+                            </mat-error>
+                        </mat-form-field>
+                        
+                        </mat-card>
+
+                    </div>
+
+            </mat-card>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------->
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "5px">
+    <div fxFlex="100"> 
+        <mat-card class="mat-elevation-z0">     
+
+            <div fxLayout = "row" fxLayoutAlign="start start" fxLayoutGap="3px" class="pnc-conf">
+                        
+                <mat-card fxFlex="25%" style="position:inherit" class="mat-elevation-z1"> 
+                    <mat-label>Bill Header Message</mat-label>
+                    <br>
+
+                    <mat-form-field>
+                        
+                        <br><br>
+                        <mat-select [formControl]="selected_billheadermsg" [errorStateMatcher]="matcher">
+            
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Message 01</mat-option>
+                            <mat-option value="valid">Message 02</mat-option>
+                            <mat-option value="valid">Message 03</mat-option>
+                            <mat-option value="invalid">Add New </mat-option>
+            
+                        </mat-select>
+            
+                        <mat-error *ngIf="selected_billheadermsg.hasError('required')">You must make a selection</mat-error>
+                        <mat-error *ngIf="selected_billheadermsg.hasError('pattern') && !selected_billheadermsg.hasError('required')">
+                            Your selection is invalid
+                        </mat-error>
+                    </mat-form-field>
+
+                </mat-card>
+
+                <mat-card fxFlex="25%" style="position:inherit" class="mat-elevation-z1"> 
+                    <mat-label>Bill Tailor Message</mat-label>
+
+                    <br>
+
+                    <mat-form-field>
+                        
+                        <br><br>
+                        <mat-select [formControl]="selected_billheaderTrlmsg" [errorStateMatcher]="matcher">
+            
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Message 01</mat-option>
+                            <mat-option value="valid">Message 02</mat-option>
+                            <mat-option value="valid">Message 03</mat-option>
+                            <mat-option value="invalid">Add New </mat-option>
+            
+                        </mat-select>
+            
+                        <mat-error *ngIf="selected_billheaderTrlmsg.hasError('required')">You must make a selection</mat-error>
+                        <mat-error *ngIf="selected_billheaderTrlmsg.hasError('pattern') && !selected_billheaderTrlmsg.hasError('required')">
+                            Your selection is invalid
+                        </mat-error>
+                    </mat-form-field>
+
+                </mat-card>
+
+                <mat-card fxFlex="25%" style="position:inherit" class="mat-elevation-z1"> 
+                    <mat-label>VDF Message</mat-label>
+
+                    <br>
+
+                    <mat-form-field>
+                        
+                        <br><br>
+                        <mat-select [formControl]=" selected_vdfmsg" [errorStateMatcher]="matcher">
+            
+                            <mat-option>Clear</mat-option>
+                            <mat-option value="valid">Message 01</mat-option>
+                            <mat-option value="valid">Message 02</mat-option>
+                            <mat-option value="valid">Message 03</mat-option>
+                            <mat-option value="invalid">Add New </mat-option>
+            
+                        </mat-select>
+            
+                        <mat-error *ngIf=" selected_vdfmsg.hasError('required')">You must make a selection</mat-error>
+                        <mat-error *ngIf=" selected_vdfmsg.hasError('pattern') && ! selected_vdfmsg.hasError('required')">
+                            Your selection is invalid
+                        </mat-error>
+                    </mat-form-field>
+
+                </mat-card>
+
+                <mat-card fxFlex="25%" style="position:inherit" class="mat-elevation-z1"> 
+                    <button mat-raised-button class="btn btn-secondary btn-lg btn-block ">SECOND DISPLAY VIDEO<mat-icon>arrow_drop_up</mat-icon> </button>
+                </mat-card>
+                    
+
+            </div>
+
+        </mat-card>
+
+        <mat-card class="mat-elevation-z0">
+
+            <mat-dialog-actions align="end">
+                <button mat-raised-button color="warn" routerLink="/pos">Previous</button>&nbsp;
+                <button mat-raised-button color="primary">Update</button>
+            </mat-dialog-actions>
+
+        </mat-card>
+
+    </div>
+</div>
+
+
+
+
+   
+
+

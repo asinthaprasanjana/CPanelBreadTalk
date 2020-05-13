@@ -1,0 +1,132 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    vertical-align: top;
+    height: 500px;
+
+  }
+
+  .dialog-box-title {
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #5e5b5bb9;
+    margin-bottom: 35px;
+}
+
+.material-table-rows:hover .btn-section{
+  opacity: 1;
+}
+
+
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .example-button-row button,
+.example-button-row a {
+  margin-right: 10px;
+ 
+}
+
+/* Success syling */
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #2d9244;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #2d9244;
+}
+
+.mat-icon-button.mat-success {
+  color:#2d9244;
+}
+.example-button-row{
+    display: flex;
+    width: 300px;
+}
+
+.mat-select{
+    width: 100%;
+}
+
+.td-label{
+  text-align: right !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.total-wrapper .col-md-3{
+  font-size: 20px !important;
+  text-align: right;
+  padding-right: 40px;
+}
+
+
+.example-loading-shade {
+  position: absolute;
+  top: 50;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.table-row:hover .btn-icon{
+  opacity: 1;
+}
+
+::ng-deep .btnSelect div.mat-select-arrow-wrapper {
+  display: none;
+}
+
+::ng-deep .btnSelect.mat-select {
+  display: inline;
+}
+
+.spinner{
+  padding-top: 50px;
+}
+
+.spinner img{
+  width: 45px;
+  height:45px;
+}
+
+.btn-filter{
+  margin-left: 10px;
+}
+
+.example-tab-icon {
+  margin-right: 5px;
+}
+
+.mat-tab-group{
+    height: 610px;
+}
+
+
+
+
+
+
+
+  
+  

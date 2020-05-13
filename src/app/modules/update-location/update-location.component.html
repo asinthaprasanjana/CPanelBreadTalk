@@ -1,0 +1,69 @@
+<div class="row">
+
+<form class="example-form">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Location Code</mat-label>
+      <input matInput placeholder="" value="">
+    </mat-form-field> <br>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Location Name</mat-label>
+        <input matInput placeholder="" value="">
+    </mat-form-field> <br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <input matInput placeholder="" value="">
+      </mat-form-field> <br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Contact Number</mat-label>
+        <span matPrefix>+094 &nbsp;</span>
+        <input type="tel" matInput placeholder="555-555-1234">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Contact Person</mat-label>
+        <input matInput placeholder="" value="">
+    </mat-form-field> <br>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Other Details</mat-label>
+      <textarea matInput placeholder=""></textarea>
+    </mat-form-field> <br>
+
+    <br>
+
+
+
+    <!--buttons-->
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap = "2px">
+
+        <div fxFlex="100"> 
+          
+            <div class="example-button-row">
+                <button (click)="saveModal()" mat-raised-button color="success">SAVE LOCATION</button>
+                <button (click)="deleteModal()" mat-raised-button color="warn">DELETE LOCATION</button>
+              </div>
+          
+        </div>
+
+    </div>
+
+           
+  </form>
+
+</div>

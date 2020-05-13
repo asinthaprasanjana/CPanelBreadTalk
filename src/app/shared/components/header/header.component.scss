@@ -1,0 +1,43 @@
+ul li {
+    list-style: none;
+    text-size-adjust: initial;   
+}
+
+.user{
+    color: white !important;
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+mat-toolbar-row{
+    background-color:rgb(1, 109, 136);
+    height: 65px;
+    font-size: 18px;
+    padding : 0px 8px;
+   
+    
+}
+
+.mat-toolbar{ 
+    background-color:white;
+    margin-bottom: 0px;
+   
+}
+
+.mat-icon{
+    vertical-align: middle;
+    margin-right: 0px;      
+    
+    border: hidden;
+} 
+
+.logout{
+    background-color: #4a000000;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+

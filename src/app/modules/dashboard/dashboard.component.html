@@ -1,0 +1,156 @@
+<div fxLayout = "row" fxLayoutAligh = "space-between" fxLayoutGap="8px">
+
+
+    <!-- <mat-form-field fxFlex="19%"> -->
+      <!-- <input matInput placeholder="Choose a date range" [daterange]="daterange"> -->
+      <!-- <daterange-toggle matSuffix [for]="daterange"></daterange-toggle>
+      <daterange #daterange (submit)=""></daterange>        -->
+    <!-- </mat-form-field> -->
+
+    <!-- <mat-form-field fxFlex="19%"> -->
+
+    <!-- <input matInput [matDatepicker]="picker" placeholder="Choose a date">   -->
+      <!-- <input matInput [matDatepicker]="picker" placeholder="Choose a date"
+      (dateChange)="">        -->
+      <!-- <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker> -->
+    <!-- </mat-form-field> -->
+  
+</div>
+
+
+<div fxLayout = "row" fxLayoutAligh = "space-between center" fxLayoutGap="4px" class="stats-cards">
+
+    <mat-card fxlex = "25%" class="mat-elevation-z3">
+       <!-- <app-widget-cards label = "Total Sales" total = {{TotalSaleCard01}}  [Carddata]="card01"></app-widget-cards>  -->
+       <app-mat-cards label = "Total Sales" total = 125500  [Carddata]="card01"></app-mat-cards> 
+    </mat-card>
+  
+    <mat-card fxlex = "25%" class="mat-elevation-z3">
+        <!-- <app-widget-cards label = "Total Bill Count" total = "{{TotalBillCountCard02}}" [Carddata]="card02"></app-widget-cards> -->
+        <app-mat-cards label = "Total Bill Count" total = "150" [Carddata]="card02"></app-mat-cards>
+    </mat-card>
+  
+    <mat-card fxlex = "25%" class="mat-elevation-z3">
+        <!-- <app-widget-cards label = "Total Discount" total = "{{TotalDiscountCard03}}"  [Carddata]="card03"></app-widget-cards> -->
+        <app-mat-cards label = "Total Discount" total = "10500"  [Carddata]="card03"></app-mat-cards>
+    </mat-card>
+  
+    <mat-card fxlex = "25%" class="mat-elevation-z3">
+        <!-- <app-widget-cards label = "Total Cancellation" total = "{{TotalCancellationCard04}}" [Carddata]="card04"></app-widget-cards> -->
+        <app-mat-cards label = "Total Cancellation" total = "7455" [Carddata]="card04"></app-mat-cards>
+    </mat-card>
+  
+  </div>
+
+  <br>
+
+  <div fxLayout = "row" fxLayoutAlign="start start" fxLayoutGap="1px" class="sale-graph">
+      
+    <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z0"> 
+        <h4>Location Wise Sales</h4>
+
+        <app-salegraph></app-salegraph><br>
+
+        <mat-card class="mat-elevation-z2">
+
+
+          <mat-card-header>
+            <mat-card-subtitle>Location Wise Sales</mat-card-subtitle>
+          </mat-card-header>
+        
+          <mat-card-content>            
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.   
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.                     
+          </mat-card-content>
+
+          <!-- <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions> -->
+
+        
+        </mat-card>
+
+    </mat-card>
+    
+    <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z0"> 
+        <h4>Total Collection</h4>
+        <app-collectiongraph></app-collectiongraph><br>
+        <mat-card class="mat-elevation-z2">
+
+
+          <mat-card-header>
+            <mat-card-subtitle>Total Collection</mat-card-subtitle>
+          </mat-card-header>
+        
+          <mat-card-content>            
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.                       
+          </mat-card-content>
+
+          <!-- <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions> -->
+
+        
+        </mat-card>
+    </mat-card>
+
+    <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z0"> 
+        <h4>Fast Moving Items</h4>
+
+        <app-fastmoving-graph></app-fastmoving-graph><br>
+
+        <mat-card class="mat-elevation-z2">
+
+          <mat-card-header>
+            <mat-card-subtitle>Fast Moving Items</mat-card-subtitle>
+          </mat-card-header>
+        
+          <mat-card-content>            
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.  
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.                      
+          </mat-card-content>
+
+          <!-- <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions> -->       
+        </mat-card>
+
+    </mat-card>   
+
+    <mat-card fxFlex="25" style="position:inherit" class="mat-elevation-z0"> 
+      <h4>Target Archived</h4>
+
+      <app-archived-graph></app-archived-graph><br>
+
+      <mat-card class="mat-elevation-z2">
+
+        <mat-card-header>
+          <mat-card-subtitle>Target Archived</mat-card-subtitle>
+        </mat-card-header>
+      
+        <mat-card-content>            
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.  
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.                      
+        </mat-card-content>
+
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->       
+      </mat-card>
+
+  </mat-card>   
+  </div>
+  
+  <br><br>
+
+    <!-- <app-location-settings-table></app-location-settings-table>  -->
+  <mat-divider></mat-divider>
+
+
+  

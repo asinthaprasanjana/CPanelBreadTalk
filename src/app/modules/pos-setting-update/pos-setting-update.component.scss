@@ -1,0 +1,52 @@
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.mat-card.mat-panel-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+//accordian controlls
+.mat-expansion-panel{
+    background-color:white;
+}
+.mat-expansion-panel-header{
+    background-color:rgb(255, 255, 255)
+}
+
+.mat-action-row{
+    background-color:rgb(255, 255, 255)
+}
+
+//mat cards and chk boxes
+.mat-card{
+    height: 225px;
+    
+}
+
+.example-h2 {
+    margin: 10px;
+  }
+  
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
+
+  .h4{
+      background-color: grayscale($color: #979191);
+  }
+
+ 

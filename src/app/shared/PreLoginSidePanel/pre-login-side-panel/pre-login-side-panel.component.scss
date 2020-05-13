@@ -1,0 +1,36 @@
+.example-card {
+    max-width: 450px;
+    background-color:rgb(25, 26, 26);
+    
+    border-color: whitesmoke;
+    
+  }
+  
+  .example-header-image {
+
+    padding-left: 0px;
+    background-image: url('https://st2.depositphotos.com/5063915/9014/v/950/depositphotos_90141366-stock-illustration-pos-terminal-concept-icons.jpg');
+    background-size: cover;
+    
+  }
+
+  .example-card.mat-card-image{
+    background-size: cover;
+  }
+
+
+
+  .mat-card-content{
+      color: whitesmoke;
+  }
+
+  .mat-card-title{
+    color: whitesmoke; 
+  }
+  .mat-card-subtitle{
+    color: whitesmoke; 
+  }
+
+  .mat-icon{
+    color: whitesmoke; 
+  }

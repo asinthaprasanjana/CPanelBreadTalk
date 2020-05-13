@@ -1,0 +1,32 @@
+ 
+<app-header (toggleSideBarForMe) = "sideBarToggler()"></app-header> 
+
+<mat-drawer-container>
+  
+        <mat-drawer mode='side' [opened]="sideBarOpen" class="SideBar">
+
+            <div *ngIf="isLoggedIn">                
+                    <app-sidebar></app-sidebar>                               
+            </div>
+
+            <div *ngIf="!isLoggedIn">          
+                    <app-pre-login-side-panel></app-pre-login-side-panel>                     
+            </div>
+
+            
+        </mat-drawer>
+
+
+        <mat-drawer-content>
+           
+            <div *ngIf="isLoggedIn">                  
+                    <router-outlet></router-outlet>
+            </div>
+
+            <div *ngIf="!isLoggedIn">
+                    <app-app-login></app-app-login>
+            </div>
+
+        </mat-drawer-content> 
+
+</mat-drawer-container>
