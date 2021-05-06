@@ -28,7 +28,7 @@
     "devextreme": "latest",
     "devextreme-angular": "latest",
     "devextreme-schematics": "^1.1.13",
-    "highcharts": "^8.0.4",
+    "highcharts": "^9.0.0",
     "highcharts-angular": "^2.4.0",
     "highcharts-solid-gauge": "^0.1.7",
     "jquery": "^3.5.0",
